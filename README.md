@@ -22,7 +22,7 @@ python  exon_covering.py -i down.bam -b /path to for file including universal 3'
 
 python  exon_covering.py -i UTR.bam -b /path to for file including extended 3'UTR coordinates in bed4 format -o long.bam -t 7 
 
-## Step 3 Parse reads that do not cover extended 3'UTR regions and have correct 3' end to short 3'UTR isoforms  
+## Step 4 Parse reads that do not cover extended 3'UTR regions and have correct 3' end to short 3'UTR isoforms  
 
 samtools view -h -b UTR.bam -L /path to for file including extended 3'UTR coordinates in bed4 format  -U short_1.bam > other.bam
 	  
@@ -30,7 +30,7 @@ samtools index short_1.bam
 
 python  polyA_filtering.py -i  short_1.bam  -o short.bam -t 7
 
-## Step 4 Calculate PSI of cassette exon for each isoform
+## Step 5 Calculate PSI of cassette exon for each isoform
 
 python calculate_PSI.py -i long.bam -b /path to for file including cassette exon coordinates in bed4 format -t 7  -o long_PSI.csv
 

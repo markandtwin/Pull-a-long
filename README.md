@@ -2,7 +2,7 @@
 
 ## Dependency requirements
 
-Python3 (>= 3.6), pysam (>= 0.15.0), samtools (>= 1.7) and minimap2 (>= 2.19) are required. We recommend building a conda enviroment (py= 3.6) and then install the dependent softwares using "conda install -c bioconda pysam samtools minimap2".
+Python3 (>= 3.6), pysam (>= 0.15.0), samtools (>= 1.7) and minimap2 (>= 2.19) are required. We recommend building a conda enviroment (py= 3.6) and then install the dependent softwares using "conda install -c bioconda pysam samtools minimap2" (~30 minutes). The cumtom python scripts is recommended to stored in a working diretory or a separate folder (added to PATH).
 
 ## Step 1 Aligne reads to reference genome
 
@@ -37,3 +37,7 @@ python  polyA_filtering.py -i  short_1.bam  -o short.bam -t 7
 python calculate_PSI.py -i long.bam -b /path to for file including cassette exon coordinates in bed4 format -t 7  -o long_PSI.csv
 
 python calculate_PSI.py -i short.bam -b /path to for file including cassette exon coordinates in bed4 format -t 7  -o short_PSI.csv
+
+## Demo data
+
+Khc-73_demo.fastq is included as sample dataset. This file contains PL-Seq data for Khc-73 in Drosophila melanogaster. It typically takes only 1-2 minutes to run all 5 step listed above.

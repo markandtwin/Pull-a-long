@@ -1,6 +1,6 @@
 # Pull-a-long
 
-Python3, pysam, samtools and minimap2 are required.
+Python3 (>= 3.6), pysam (>= 0.15.0), samtools (>= 1.7) and minimap2 (>= 2.19) are required.
 
 ## Step 1 Aligne reads to reference genome
 

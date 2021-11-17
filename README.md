@@ -40,4 +40,4 @@ python calculate_PSI.py -i short.bam -b /path to for file including cassette exo
 
 ## Demo data
 
-Khc-73_demo.fastq is included as sample dataset. This file contains PL-Seq data for Khc-73 in Drosophila melanogaster. It typically takes only 1-2 minutes to run all 5 step listed above.
+Khc-73_demo.fastq is included as sample dataset as well as the output from it. This file contains PL-Seq data for Khc-73 in Drosophila melanogaster. It typically takes only 1 minute to run all 5 step listed above using this demo data set.

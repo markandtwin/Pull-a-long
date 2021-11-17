@@ -1,6 +1,8 @@
 # Pull-a-long
 
-Python3 (>= 3.6), pysam (>= 0.15.0), samtools (>= 1.7) and minimap2 (>= 2.19) are required.
+## Dependency requirements
+
+Python3 (>= 3.6), pysam (>= 0.15.0), samtools (>= 1.7) and minimap2 (>= 2.19) are required. We recommend building a conda enviroment (py= 3.6) and then install the dependent softwares using "conda install -c bioconda pysam samtools minimap2".
 
 ## Step 1 Aligne reads to reference genome
 
